@@ -1,10 +1,10 @@
-#Custom Health
+# Custom Health
 Spigot plugin that allow Admins to customize player's max health.
 
-#Usage
+# Usage
 Set player's max health
 
     /customhealth <player> <max-health>
 
-#License
+# License
 GPL V3
