@@ -21,6 +21,7 @@ public class CustomHealthCommand implements TabExecutor {
         }
 
         if (args.length != 2) {
+            //noinspection SpellCheckingInspection
             sender.sendMessage("Usage: /customhealth <player> <max-health>");
             return true;
         }
@@ -32,11 +33,12 @@ public class CustomHealthCommand implements TabExecutor {
             return true;
         }
 
-        int maxHealth = 0;
+        int maxHealth;
         try {
             maxHealth = Integer.valueOf(args[1]);
         } catch (NumberFormatException e) {
             sender.sendMessage(String.format("%s is not a valid number", args[1]));
+            return true;
         }
         //noinspection ConstantConditions
         player.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(maxHealth);

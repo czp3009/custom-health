@@ -4,6 +4,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Logger;
 
+@SuppressWarnings("unused")
 public class CustomHealth extends JavaPlugin {
     private Logger log;
 
@@ -11,7 +12,7 @@ public class CustomHealth extends JavaPlugin {
     public void onEnable() {
         log = getLogger();
 
-        //noinspection ConstantConditions
+        //noinspection ConstantConditions,SpellCheckingInspection
         getCommand("customhealth").setExecutor(new CustomHealthCommand());
 
         log.info("Enabled");
