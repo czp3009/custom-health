@@ -1,0 +1,7 @@
+name: CustomHealth
+main: com.hiczp.spigot.customhealth.CustomHealth
+version: 0.0.1
+commands:
+  customhealth:
+    description: Your description
+    usage: "Usage: /<command> <player> <max-health>"
